@@ -1,5 +1,0 @@
-#!/bin/bash
-chmod a+x $1
-git add .
-git commit -m "added $1 file"
-git push
