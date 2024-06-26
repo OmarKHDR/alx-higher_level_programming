@@ -12,20 +12,17 @@ listint_t *insert_node(listint_t **head, int number)
         return (NULL);
     
     find->n = number;
+    if (ptr->n > find->n)
+    {
+        find->next = ptr;
+        (*head) = find;
+        return (find);
+    }
     while (ptr->next != NULL && ptr->next->n < find->n)
     {
         ptr = ptr->next;
     }
-    if (ptr->next == NULL)
-    {
-        ptr->next = find;
-        find->next = NULL;
-    }
-    else
-    {
-        find->next = ptr->next;
-        ptr->next = find;
-    }
-    
+    find->next = ptr->next;
+    ptr->next = find;
     return find;
 }
