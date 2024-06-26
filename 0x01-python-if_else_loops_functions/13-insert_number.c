@@ -12,7 +12,10 @@ listint_t *insert_node(listint_t **head, int number)
         return (NULL);
     find->n = number;
     if (ptr == NULL)
+    {
+        (*head) = find;
         return (find);
+    }
     if (ptr->n > find->n)
     {
         find->next = ptr;
