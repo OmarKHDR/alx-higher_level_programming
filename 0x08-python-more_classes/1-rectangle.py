@@ -2,12 +2,12 @@
 
 class Rectangle:
     def __init__(self, width=0, height=0) -> None:
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
     
     @property
     def width(self):
-        return self._width
+        return self.__width
     
     @width.setter
     def width(self, width):
@@ -15,11 +15,11 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         if type(width) is not int:
             raise TypeError("width must be integer")
-        self._width = width
+        self.__width = width
 
     @property
     def height(self):
-        return self._height
+        return self.__height
     
     @height.setter
     def height(self, height):
@@ -28,11 +28,5 @@ class Rectangle:
         if type(height) is not int:
             raise TypeError("height must be integer")
         else:
-            self._height = height
+            self.__height = height
 
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.__dict__)
-
-my_rectangle.width = 10000
-my_rectangle.height = -3
-print(my_rectangle.__dict__)
