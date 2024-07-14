@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from math import pow, sqrt
 
 class Rectangle:
     def __init__(self, width=0, height=0) -> None:
@@ -38,6 +37,15 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            length_sq = pow(self.__width, 2) + pow(self.__height, 2)
-            length = sqrt(length_sq)
+            length = 2 * (self.__width + self.__height)
             return length
+
+
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+print("--")
+my_rectangle.width = 10
+my_rectangle.height = 3
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
