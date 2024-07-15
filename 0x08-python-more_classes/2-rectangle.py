@@ -40,9 +40,3 @@ class Rectangle:
             length = 2 * (self.__width + self.__height)
             return length
 
-
-    def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        shape = ("#" * self.__width +"\n") * self.__height
-        return shape.rstrip('\n')
