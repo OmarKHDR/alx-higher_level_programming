@@ -45,3 +45,7 @@ class Rectangle:
             return ""
         shape = ("#" * self.__width +"\n") * self.__height
         return shape.rstrip('\n')
+
+            
+    def __repr__(self):
+        return f"Rectangle({self.__width},{self.__height})"
