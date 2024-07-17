@@ -3,7 +3,7 @@
 class Rectangle:
     rectnum = 0
     def __init__(self, width=0, height=0) -> None:
-        Rectangle.rectum += 1
+        Rectangle.rectnum += 1
         self.__width = width
         self.__height = height
     
@@ -51,3 +51,19 @@ class Rectangle:
             
     def __repr__(self):
         return f"Rectangle({self.__width},{self.__height})"
+
+    def __del__(self):
+        Rectangle.rectnum -= 1
+        print("Bye rectangle...")
+
+
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+del my_rectangle
+
+try:
+    print(my_rectangle)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
