@@ -11,6 +11,5 @@ def magic_string():
     """
     global counter
     counter += 1
-    for i in range(counter):
-        print("BestSchool", end=("", ", ")[i < counter - 1])
+    print("BestSchool, " * (counter - 1) + "BestSchool", end="")
     return ""
