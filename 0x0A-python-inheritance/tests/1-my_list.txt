@@ -1,7 +1,9 @@
 ===============================
         print_sorted
 ===============================
-
+importing
+>>> MyList = __import__('1-my_list').MyList
+simple test cases
 
 >>> my_list = MyList()
 >>> my_list.append(1)
