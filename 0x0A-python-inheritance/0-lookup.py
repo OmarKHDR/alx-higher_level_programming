@@ -10,7 +10,7 @@ def lookup(obj):
     """
     return list(type(obj).__dict__)
 
-
+"""
 class MyClass1(object):
     pass
 
@@ -21,4 +21,4 @@ class MyClass2(object):
 
 print(lookup(MyClass1))
 print(lookup(MyClass2))
-print(lookup(int))
+print(lookup(int))"""
