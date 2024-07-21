@@ -4,5 +4,8 @@ import json
 
 
 def to_json_string(my_obj):
-    """ file fowawa"""
+    """ file fowawa
+        args:
+        my_obj
+    """
     return json.dumps(my_obj)
