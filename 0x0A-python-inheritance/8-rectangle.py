@@ -23,9 +23,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """ Rect
-    """
-
+    """ Rect"""
 
     def __init__(self, width, height):
         """ initialization
