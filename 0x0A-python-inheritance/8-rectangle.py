@@ -25,10 +25,12 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """ Rect
     """
+
+
     def __init__(self, width, height):
         """ initialization
-            args: 
-            width: and 
+            args:
+            width: and
             height:
         """
         self.integer_validator("width", width)
