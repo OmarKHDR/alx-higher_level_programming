@@ -1,11 +1,11 @@
 #!usr/bin/python3
 
-""" is instance"""
+""" is instance frrm the classu"""
 
 
 def is_same_class(obj, a_class):
-    """ descripe
+    """ descripe is clasxxa
         args:
         obj, a_class  
     """
-    return type(obj) is a_class
+    return (type(obj) is a_class)
