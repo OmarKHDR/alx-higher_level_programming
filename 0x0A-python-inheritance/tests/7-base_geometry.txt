@@ -1,6 +1,9 @@
-============================
-        BaseGeometry
-============================
+The ``7-base_geometry`` module
+======================
+
+Using ``BaseGeometry``
+-------------------
+
 
 first importing
     >>> BaseGeometry = __import__('7-base_geometry.py').BaseGeometry
