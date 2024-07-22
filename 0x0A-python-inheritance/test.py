@@ -1,0 +1,37 @@
+import doctest
+
+
+def run_tsts():
+    """
+    ==============================
+            print_sorted
+    ===============================
+    importing
+        >>> MyList = __import__('1-my_list').MyList
+
+    simple test cases
+        >>> my_list = MyList()
+        >>> my_list.append(1)
+        >>> my_list.append(4)
+        >>> my_list.append(2)
+        >>> my_list.append(3)
+        >>> my_list.append(5)
+        >>> my_list.print_sorted()
+        [1, 2, 3, 4, 5]
+
+    now we negative:
+        >>> my_list = MyList()
+        >>> my_list.append(-1)
+        >>> my_list.append(-4)
+        >>> my_list.append(-2)
+        >>> my_list.append(-3)
+        >>> my_list.append(-5)
+        >>> my_list.print_sorted()
+        [-5, -4, -2, -1]
+
+        >>> my_list = MyList()
+        >>> my_list.print_sorted()
+        []
+
+    """
+doctest.testmod()
