@@ -1,3 +1,4 @@
+#!/usr/bin/pyrhon3
 from models.base import Base
 """fuel"""
 
