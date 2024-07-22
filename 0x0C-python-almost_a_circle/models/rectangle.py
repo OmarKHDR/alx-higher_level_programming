@@ -18,6 +18,10 @@ class Rectangle(Base):
         """this is area51"""
         return self.__height * self.__width
 
+    def display(self):
+        s = ("#" * self.__width + '\n') * self.__height
+        print(s, end='')
+
     @property
     def width(self):
         """pro"""
