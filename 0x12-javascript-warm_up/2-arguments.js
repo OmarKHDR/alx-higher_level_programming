@@ -10,5 +10,5 @@ switch (myVar) {
     console.log('Argument found');
     break;
   default:
-        console.log('Arguments found');
+    console.log('Arguments found');
 }
