@@ -1,9 +1,10 @@
 #!/usr/bin/node
 
-const arg = process.argv[2];
-if (arg.isInteger())
+let arg = process.argv[2];
+arg = parseInt(arg);
+if (Number.isInteger(arg))
 {
-    console.log(parseInt(arg));
+    console.log(arg);
 }
 else
 {
