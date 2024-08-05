@@ -2,7 +2,11 @@
 
 arr = process.argv;
 
-for (let i = 2;arr[i] !== undefined ; i++)
+if (arr[2] === undefined)
 {
-    console.log(arr[i]);
+    console.log("No argument");
+}
+else
+{
+    console.log(arr[2]);
 }
