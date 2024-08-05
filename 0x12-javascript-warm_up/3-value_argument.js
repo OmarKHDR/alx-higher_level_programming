@@ -2,7 +2,7 @@
 
 arr = process.argv;
 
-for (let i = 2; i < arr.length; i++)
+for (let i = 2;arr[i] !== undefined ; i++)
 {
     console.log(arr[i]);
 }
