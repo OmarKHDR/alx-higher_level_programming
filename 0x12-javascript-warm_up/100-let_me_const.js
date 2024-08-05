@@ -1,4 +1,4 @@
 #!/usr/bin/node
 
-require('./').myVar;
+require('./main_0.js').myVar;
 myVar = 333; 
