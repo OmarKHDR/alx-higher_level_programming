@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-arr = process.argv;
+let arr = process.argv;
 
 if (arr[2] === undefined)
 {
