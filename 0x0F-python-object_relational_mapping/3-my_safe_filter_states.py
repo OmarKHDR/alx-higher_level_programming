@@ -12,7 +12,7 @@ if __name__ == '__main__':
                          user=args[1], passwd=args[2], db=args[3])
     cr = db.cursor()
     query = "SELECT * FROM states WHERE states.name LIKE "
-    num = cr.execute(query, str(args[4].strip('\"')))
+    num = cr.execute(query, args[4].strip('\"'))
     row = cr.fetchall()
     for i in range(num):
         print("{}".format(row[i]))
