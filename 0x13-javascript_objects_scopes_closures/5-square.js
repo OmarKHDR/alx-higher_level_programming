@@ -8,10 +8,11 @@ class Rectangle {
     }
   }
 
-  print () {
-    let str = `${'X'.repeat(this.width) + '\n'}`.repeat(this.height);
+  print (c = 'X') {
+    let str = `${c.repeat(this.width) + '\n'}`.repeat(this.height);
     str = str.slice(0, -1);
     console.log(str);
+    return str;
   }
 
   rotate () {
