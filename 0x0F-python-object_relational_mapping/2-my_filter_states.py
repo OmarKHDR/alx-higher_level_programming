@@ -12,7 +12,7 @@ if __name__ == '__main__':
                          user=args[1], passwd=args[2], db=args[3])
     cr = db.cursor()
     nm = args[4].strip('\"')
-    query = "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC;"
+    query = "SELECT * FROM states WHERE name BINARY LIKE %s ORDER BY id ASC;"
     num = cr.execute(query, (nm + '%',))
     row = cr.fetchall()
     for i in range(num):
