@@ -16,6 +16,6 @@ if __name__ == '__main__':
     num = cr.execute("SELECT * FROM states ORDER BY id ASC;")
     row = cr.fetchall()
     for i in range(num):
-        print("({}, {}".format(i+1, row[i]))
+        print("{}".format(row[i]))
     cr.close()
     db.close()
