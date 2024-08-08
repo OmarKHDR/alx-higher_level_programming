@@ -11,7 +11,7 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host="localhost", port=3306,
                          user=args[1], passwd=args[2], db=args[3])
     cr = db.cursor()
-    query = "SELECT * FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC;"
+    query = "SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON states.id = cities.state_id ORDER BY cities.id ASC;"
     num = cr.execute(query)
     row = cr.fetchall()
     for i in range(num):
