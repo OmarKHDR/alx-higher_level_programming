@@ -12,7 +12,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     st = session.query(State).order_by(State.id).filter(State.name.like ("%a%"))
-    if st is None:
-        print("Nothing")
-    else:
-        print("{}: {}".format(st.id, st.name))
+    for s in st:
+        if s is None:
+            print("Nothing")
+        else:
+            print("{}: {}".format(s.id, s.name))
