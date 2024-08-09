@@ -1,19 +1,15 @@
 #!/usr/bin/python3
-""" 
-    python is lame
-"""
-
+"""Lame py is true"""
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import column, Integer, String
-from sqlalchemy import UniqueConstraint, Nullable, VARCHAR
-""" docs is docs
-"""
 
 
+myMetaData = MetaData()
 Base = declarative_base()
+
+
 class State(Base):
-    """my class
-    """
+    """A state table here"""
     __tablename__ = 'states'
-    id = column('id', Integer, UniqueConstraint, not Nullable)
-    name = column('name', VARCHAR(128), not Nullable)
+    id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    name = Column(String(128), nullable=False)
