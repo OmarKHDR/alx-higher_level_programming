@@ -2,9 +2,13 @@
 """ 
     python is lame
 """
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import column, Integer, String
 from sqlalchemy import UniqueConstraint, Nullable, VARCHAR
+""" docs is docs
+"""
+
 
 Base = declarative_base()
 class State(Base):
