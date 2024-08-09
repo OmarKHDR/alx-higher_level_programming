@@ -12,6 +12,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     ses = Session()
     obj = State(name='Louisiana')
+    ses.add(obj)
+    ses.commit()
     st = ses.query(State).order_by(State.id).all()
     for st in ses:
         print("{}: {}".format(st.id, st.name))
