@@ -15,5 +15,5 @@ if __name__ == "__main__":
     ses.add(obj)
     ses.commit()
     st = ses.query(State).order_by(State.id).filter(State.name == 'Louisiana')
-    if st is not None:
-        print("{}".format(st.id))
+    for st in ses:
+        print("{}: {}".format(st.id))
