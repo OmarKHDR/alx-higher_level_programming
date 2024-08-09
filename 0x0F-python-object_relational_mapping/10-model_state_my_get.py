@@ -15,4 +15,4 @@ if __name__ == "__main__":
     if st is None:
         print("Not found")
     else:
-        print("{}: {}".format(st.id))
+        print("{}".format(st.id))
