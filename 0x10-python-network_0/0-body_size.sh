@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
+#commenrt
+
 if [$# -ne 1];then
     echo "usage: ./0-body_size.sh ip:port"
     exit 1
