@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!bin/bash
 #commenrt
 
 if [$# -ne 1];then
