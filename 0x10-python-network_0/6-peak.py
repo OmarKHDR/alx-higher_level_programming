@@ -11,10 +11,10 @@ def find_peak(list_of_integers):
     if list_of_integers in arr.keys():
         return arr[list_of_integers]
     else:
-        arr.append(list_of_integers)
+        arr[list_of_integer] = None
         peak = list_of_integers[0]
         for i in list_of_integers:
             if i > peak:
                 peak = i
-        
+        arr[list_of_integer] = peak
         return peak
