@@ -1,3 +1,3 @@
 #!/bin/bash
 # --+--
-curl -X GET $1 -H "X-School-User-Id:98"
+curl -s -X GET $1 -H "X-School-User-Id:98"
