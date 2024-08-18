@@ -13,4 +13,4 @@ if __name__ == '__main__':
         auth=base)
 
     response = res.json()
-    print(response)
+    print(response['id'])
