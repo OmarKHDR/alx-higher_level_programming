@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""doc suck"""
 
 import urllib.request as reqlib
 import sys
