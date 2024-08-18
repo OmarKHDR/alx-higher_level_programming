@@ -9,4 +9,4 @@ if __name__ == '__main__':
     res = requests.get(api)
     res = res.json()
     for i in range(10):
-        print(res[i]['sha'],f": {res[i]['commit']['author']['name']}")
+        print(f"{res[i]['sha']}: ", res[i]['commit']['author']['name'])
