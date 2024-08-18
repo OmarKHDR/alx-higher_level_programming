@@ -14,3 +14,4 @@ if __name__ == '__main__':
     res = req.Request(sys.argv[1], data=dt)
     with req.urlopen(res) as f:
         r = f.read()
+        print(r.decode('utf-8'))
