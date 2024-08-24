@@ -1,14 +1,11 @@
 #!/usr/bin/node
 
-
 const request = require('request');
 const url = process.argv[2];
 const id = '18';
 const car = `https://swapi-api.alx-tools.com/api/people/${id}`
 const pattern = new RegExp(car, 'i');
 let count = 0;
-
-
 
 request.get(url, (error, response, body) => {
     if (error) {
@@ -22,12 +19,9 @@ request.get(url, (error, response, body) => {
                 if (pattern.test(ele)) {
                     count ++;
                 }
-
-            }
-
-            )
+            });
         });
-        console.log(count)
+        console.log(count);
     }
 });
 
